@@ -30,18 +30,18 @@ Elevators don’t move in strict yes/no patterns. Real-world scenarios have unce
    ```bash
    pip install numpy scikit-fuzzy matplotlib tqdm
 
-Run the script:
+2. **Run the script**:
 python elevator_fuzzy.py
 
 Enter the constant weight of the elevator load when prompted (between 0 and 500).
 Enter the number of data points to define resolution for the surface plot.
 Watch the program evaluate acceleration across speed and position ranges and display a 3D plot.
 
-What You’ll See:
+## What You’ll See:
 A colorful 3D surface showing acceleration based on speed and position.
 Acceleration decreases (more negative) with higher weights and speeds, mimicking real elevator dynamics.
 
-Code Highlights
+## Code Highlights
 Fuzzy sets defined using trapezoidal membership functions (e.g., Low, Medium, High for weight).
 Singleton membership functions for outputs (specific acceleration values).
 Intuitive rules combining inputs to determine output acceleration.
@@ -50,7 +50,7 @@ Efficient system setup: fuzzy system is built once, then used repeatedly for eva
 User input validation to ensure realistic data.
 Visualized with Matplotlib’s 3D plotting.
 
-Feel free to...
+## Feel free to...
 Experiment with different rules or membership functions.
 Integrate this fuzzy controller into a bigger elevator simulation.
 Use it as a learning resource for fuzzy logic concepts.
